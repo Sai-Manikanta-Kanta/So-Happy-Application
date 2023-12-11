@@ -2,9 +2,11 @@
 A Full Stack (MERN) Application 
 
 Technologies Used:
+
 Node JS , Express JS , MongoDB , Mongoose ODM , Postman ,Axios , Javascript Language , CSS ,HTML
 
 Project Description:
+
 Built API's for getting and posting user's queries with form using Node JS and Express JS
 
 Defined data models using mongoose ODM
