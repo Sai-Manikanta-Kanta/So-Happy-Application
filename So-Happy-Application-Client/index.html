@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Happy Application</title>
+    <link rel="stylesheet" href="./styles/page.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/frame640.css" />
+    <link rel="stylesheet" href="./styles/maskGroup.css" />
+    <link rel="stylesheet" href="./styles/clients.css" />
+    <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/testimonials.css" />
+    <link rel="stylesheet" href="./styles/faq.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/download.css" />
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&family=Inter:wght@700&family=Manrope:wght@700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar Markup-->
+    <div class="navigation-wrapper">
+      <div id="logo-wrapper">
+        <div id="plate-spoons-wrapper">
+          <img
+            src="./assets/Navigation-Bar/fork-image.png"
+            alt="fork-image"
+            id="fork-image"
+          />
+          <img
+            src="./assets/Navigation-Bar/plate-image.png"
+            alt="plate-image"
+            id="plate-image"
+          />
+          <img
+            src="./assets/Navigation-Bar/spoon-image.png"
+            alt="spoon-image "
+            id="spoon-image"
+          />
+        </div>
+        <div id="so-happy-text-wrapper">So Happy</div>
+      </div>
+      <div id="options-wrapper">
+        <div
+          class="nav-options-text"
+          onclick="navigateToClients('clients-wrapper')"
+        >
+          CLIENTS
+        </div>
+        <div
+          class="nav-options-text"
+          onclick="navigateToFeatures('features-wrapper')"
+        >
+          FEATURES
+        </div>
+        <div
+          class="nav-options-text"
+          onclick="navigateToTestimonials('testimonials-wrapper')"
+        >
+          TESTIMONIALS
+        </div>
+        <div class="nav-options-text" onclick="navigateToFaq('faq-wrapper')">
+          FAQS
+        </div>
+        <div
+          class="nav-options-text"
+          onclick="navigateToContact('contact-wrapper')"
+        >
+          CONTACT US
+        </div>
+        <div class="nav-options-text" id="admin-btn">ADMIN</div>
+      </div>
+      <button id="download-buton">Download App</button>
+    </div>
+    <!--Download Page markup-->
+    <div class="download-page" id="download-page">
+      <div class="download-card">
+        <div id="card-left-part">
+          <div id="left-title">Download SoHappy Now</div>
+          <div id="left-text">
+            So Happy – Lets you know what’s on the menu at your <br />
+            school’s cafeteria. So Happy provides full nutritional <br />
+            information on what you eat, including calories & allergens
+          </div>
+          <div id="left-link">
+            <div id="link-title">Get the link to Download the App</div>
+            <div id="link-input-btn">
+              <input
+                type="text"
+                placeholder="Enter Mobile Number"
+                id="download-mobile"
+              />
+              <button id="get-app-link-btn">Get App Link</button>
+            </div>
+          </div>
+        </div>
+        <div id="card-right-part">
+          <div id="right-cancel">
+            <button id="download-cancel-btn">
+              <img src="./assets/close-btn-image.png" alt="" />
+            </button>
+          </div>
+          <div id="right-text">
+            <img src="./assets/qr-icon.png" alt="" id="qr-icon" />
+          </div>
+          <div id="right-link">
+            <img
+              src="./assets/Frame640/paly-store-btn.png"
+              alt=""
+              id="download-google-play-store"
+            />
+            <img
+              src="./assets/Frame640/app-store-btn.png"
+              id="download-app-store"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Admin Page-->
+    <div class="admin-page-wrapper" id="admin-page-wrapper">
+      <button id="admin-close-btn">
+        <img src="./assets/close-btn-image.png" alt="" />
+      </button>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+
+            <th>School</th>
+
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!--Frame 640 Wrapper Markup-->
+    <div class="frame-640-wrapper">
+      <div class="frame-640-wrapper-left-part">
+        <div id="left-part-heading">
+          Explore what’s on the school’s <br />
+          cafeteria menu today
+        </div>
+        <div id="left-part-text">
+          So Happy let’s you to explore menu, order food & track activities
+          <br />
+          all in one place, it’s your new eating companion.
+        </div>
+        <div class="two-btns-wrapper">
+          <button class="store-btn" id="playstore-btn">
+            <img
+              src="./assets/Frame640/paly-store-btn.png"
+              alt="play-store-btn"
+              id="playstore-btn"
+            />
+          </button>
+          <button class="store-btn" id="appstore-btn">
+            <img
+              src="./assets/Frame640/app-store-btn.png"
+              alt="app-store-btn"
+              id="appstore-btn"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="frame-640-wrapper-right-part">
+        <div class="central-part-wrapper">
+          <div id="circular-wrapper">
+            <img
+              src="./assets/Frame640/boy-image.png"
+              alt="boy-image"
+              id="boy-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mask Group Markup-->
+    <div class="mask-group-wrapper">
+      <div class="orange-background-wrapper">
+        <div class="orange-photo-wrapper">
+          <img
+            src="./assets/Mask Group/Menu-cell-iamge.png"
+            alt="menu-cell-image"
+            id="menu-cell-image"
+          />
+        </div>
+        <div class="orange-text-wrapper">
+          <div class="trusted-text-wrapper">
+            Trusted by over 1000 schools and <br />
+            50,000 users globally
+          </div>
+          <div class="group-icons-wrapper">
+            <img
+              src="./assets/Mask Group/group-photos.png"
+              alt="group-icons"
+              id="group-icons"
+            />
+          </div>
+          <div class="ratings-wrapper">
+            <img
+              src="./assets/Mask Group/rating-stars.png"
+              alt="rating-stars"
+              id="rating-stars"
+            />
+            <span id="rating-text">4.5/5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Clients Markup-->
+    <div class="clients-wrapper" id="clients-wrapper">
+      <div id="clients-text-wrapper">Adapted by 1000+ schools and colleges</div>
+      <div id="clients-icons-wrapper">
+        <img src="./assets/Clients/icon-1.png" alt="icon" class="client-icon" />
+        <img src="./assets/Clients/icon-2.png" alt="icon" class="client-icon" />
+        <img src="./assets/Clients/icon-3.png" alt="icon" class="client-icon" />
+        <img src="./assets/Clients/icon-4.png" alt="icon" class="client-icon" />
+        <img src="./assets/Clients/icon-5.png" alt="icon" class="client-icon" />
+      </div>
+    </div>
+    <!--Features Markup-->
+    <div class="features-wrapper" id="features-wrapper">
+      <div class="features-text-wrapper">
+        <div id="features-heading">Features</div>
+        <div id="features-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+          pellentesque vitae <br />
+          euismod suscipit at egestas lectus.
+        </div>
+      </div>
+      <div class="features-block1-wrapper">
+        <div class="block1-left">
+          <div class="circle-wrapper">
+            <img
+              src="./assets/Features/block1-image.png"
+              alt="block1-image"
+              class="display-image"
+            />
+          </div>
+        </div>
+        <div class="block1-right">
+          <div class="dummy-wrapper">
+            <div class="common-heading">Find what’s on the menu</div>
+            <div class="common-text">
+              The So Happy app allows parents and students to see <br />
+              what’s on the menu at their school’s cafeteria.
+            </div>
+            <button class="common-btn">Download App</button>
+          </div>
+        </div>
+      </div>
+      <div class="features-block2-wrapper">
+        <div class="block2-left">
+          <div class="dummy-wrapper">
+            <div class="common-heading">Know your Food</div>
+            <div class="common-text">
+              Not only can parents and students see the menu items, <br />
+              they have access to the nutritional and allergen information.
+            </div>
+            <button class="common-btn">Download App</button>
+          </div>
+        </div>
+        <div class="block2-right">
+          <div class="circle-wrapper">
+            <img
+              src="./assets/Features/block2-image.png"
+              alt="block1-image"
+              class="display-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="features-block3-wrapper">
+        <div class="block3-left">
+          <div class="circle-wrapper">
+            <img
+              src="./assets/Features/block3-image.png"
+              alt="block1-image"
+              class="display-image"
+            />
+          </div>
+        </div>
+        <div class="block3-right">
+          <div class="dummy-wrapper">
+            <div class="common-heading">Track your Activities</div>
+            <div class="common-text">
+              The So Happy app allows you to track your steps and <br />
+              fitness activities. It even shows you how many steps <br />
+              students from your entire school have contributed.
+            </div>
+            <button class="common-btn">Dowload App</button>
+          </div>
+        </div>
+      </div>
+      <div class="features-block4-wrapper">
+        <div class="block4-left">
+          <div class="dummy-wrapper">
+            <div class="common-heading">Get food & health insights</div>
+            <div class="common-text">
+              So Happy also provides inisightful content on nutrition, <br />
+              food and healthy lifestyle to you and your family.
+            </div>
+            <button class="common-btn">Download App</button>
+          </div>
+        </div>
+        <div class="block4-right">
+          <div class="circle-wrapper">
+            <img
+              src="./assets/Features/block4-image.png"
+              alt="block1-image"
+              class="display-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Testimonials Page-->
+    <div class="testimonials-page-wrapper" id="testimonials-wrapper">
+      <div id="testimonials-heading">Listen from the Customers</div>
+      <div id="cards-wrapper">
+        <div class="card-testimonials">
+          <img
+            src="./assets/Testimonials/quote-icon.png"
+            alt="quote-mark"
+            id="quote-mark"
+          />
+          <div id="test-card-text">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit. Nibh <br />
+            pellentesque vitae euismod suscipit.
+          </div>
+          <div id="details-card-test">
+            <img
+              src="./assets/Testimonials/test-1.png"
+              alt=""
+              id="image-test-details"
+            />
+            <div class="test-name-desig-wrapper">
+              <div id="test-name">Cristiana Smith</div>
+              <div id="test-desig">Architect, Newyork</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-testimonials">
+          <img
+            src="./assets/Testimonials/quote-icon.png"
+            alt="quote-mark"
+            id="quote-mark"
+          />
+          <div id="test-card-text">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit. Nibh <br />
+            pellentesque vitae euismod suscipit.
+          </div>
+          <div id="details-card-test">
+            <img
+              src="./assets/Testimonials/test-2.png"
+              alt=""
+              id="image-test-details"
+            />
+            <div class="test-name-desig-wrapper">
+              <div id="test-name">James Clear</div>
+              <div id="test-desig">IT Professional, Florida</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-testimonials">
+          <img
+            src="./assets/Testimonials/quote-icon.png"
+            alt="quote-mark"
+            id="quote-mark"
+          />
+          <div id="test-card-text">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit. Nibh <br />
+            pellentesque vitae euismod suscipit.
+          </div>
+          <div id="details-card-test">
+            <img
+              src="./assets/Testimonials/test-3.png"
+              alt=""
+              id="image-test-details"
+            />
+            <div class="test-name-desig-wrapper">
+              <div id="test-name">Shirley Lynn</div>
+              <div id="test-desig">IT Professional, Tampa</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-testimonials">
+          <img
+            src="./assets/Testimonials/quote-icon.png"
+            alt="quote-mark"
+            id="quote-mark"
+          />
+          <div id="test-card-text">
+            Lorem ipsum dolor sit amet, <br />
+            consectetur adipiscing elit. Nibh <br />
+            pellentesque vitae euismod suscipit.
+          </div>
+          <div id="details-card-test">
+            <img
+              src="./assets/Testimonials/test-4.png"
+              alt=""
+              id="image-test-details"
+            />
+            <div class="test-name-desig-wrapper">
+              <div id="test-name">Chris Do</div>
+              <div id="test-desig">Business Analyst, Newyork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--faq Page-->
+    <div class="faq-page-wrapper" id="faq-wrapper">
+      <div id="faq-heading">Frequently Asked Questions</div>
+      <div id="faq-list-wrapper">
+        <div class="q1">
+          <div class="question">
+            <span>What is the Sodexo Cafeteria Pass?</span>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="q1">
+          <div class="question">
+            <span>Do you charge commison for orders?</span>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="q1">
+          <div class="question">
+            <span>Will my users know how to handle the App?</span>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="q1">
+          <div class="question">
+            <span>Where can I see my orders?</span>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="q1">
+          <div class="question">
+            <span>How do I pay for the Food App?</span>
+            <span>+</span>
+          </div>
+        </div>
+        <div class="q1">
+          <div class="question">
+            <span>What languages is Food App available in?</span>
+            <span>+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact Page-->
+    <div class="contact-page-wrapper" id="contact-wrapper">
+      <div id="contact-heading">Contact Us</div>
+      <div id="contact-text">
+        Have a question about So Happy? Would you like So Happy in your school
+        district? <br />
+        Fill out the form below and we'll get back to you shortly!
+      </div>
+      <form id="contact-form-wrapper">
+        <div id="line-1">
+          <div id="name-wrapper">
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input" placeholder="Manikanta Kanta" />
+          </div>
+          <div id="email-wrapper">
+            <label for="email-input">Email</label>
+            <input
+              type="text"
+              id="email-input"
+              placeholder="kanta.saimanikanta@gmail.com"
+            />
+          </div>
+        </div>
+        <div id="line-2">
+          <div id="cell-wrapper">
+            <label for="phone-input">Phone</label>
+            <input type="text" id="phone-input" placeholder="91+ 9491863308" />
+          </div>
+          <div id="school-wrapper">
+            <label for="school-input">School</label>
+            <input
+              type="text"
+              id="school-input"
+              placeholder="SRKR Engineering College"
+            />
+          </div>
+        </div>
+        <div id="line-3">
+          <label for="msg-input">Message</label>
+          <input
+            type="text"
+            id="msg-input"
+            placeholder="Whta do you want to talk to us about?"
+          />
+        </div>
+        <div id="line-4">
+          <button id="send-msg">SEND MESSAGE</button>
+        </div>
+      </form>
+    </div>
+    <!--Footer Page-->
+    <div class="footer-page-wrapper">
+      <div id="footer-unit-1">
+        <img src="./assets/Footer/sedexo-icon.png" alt="" id="sedexo-icon" />
+        <span id="copyright">&copy; All rights reserved.</span>
+      </div>
+      <div id="footer-unit-2">
+        <span class="unit-2-text">Terms of service</span>
+        <span class="unit-2-text">Privacy policy</span>
+        <span class="unit-2-text">Support</span>
+      </div>
+      <div id="footer-unit-3">
+        <img
+          src="./assets/Footer/linkedin-icon.png"
+          alt=""
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/Footer/fb-icon.png"
+          alt=""
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/Footer/instagram-icon.png"
+          alt=""
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/Footer/twitter-icon.png"
+          alt=""
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/Footer/youtube-icon.png"
+          alt=""
+          class="footer-social-icon"
+        />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

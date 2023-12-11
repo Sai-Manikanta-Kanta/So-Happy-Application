@@ -1,0 +1,43 @@
+.faq-page-wrapper {
+  width: 100vw;
+  height: 53vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#faq-heading {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 3.3vw;
+  color: #0e0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vw;
+}
+#faq-list-wrapper {
+  width: 87vw;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.q1 {
+  width: 90%;
+  height: 14%;
+}
+.question {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.3vw;
+  line-height: 1.6vw;
+  color: #0e0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

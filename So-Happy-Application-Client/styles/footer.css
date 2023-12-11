@@ -1,0 +1,56 @@
+.footer-page-wrapper{
+    width: 100vw;
+    height: 6.75vw;
+    background-color: #02042B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-unit-1{
+width: 40%;
+height: 80%;
+
+display: flex;
+align-items: center;
+justify-content: start;
+}
+#footer-unit-2{
+    width: 30%;
+    height: 80%;
+  
+    display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+#footer-unit-3{
+    width: 20%;
+    height: 80%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#copyright{
+font-family: "Inter";
+font-weight: 400;
+font-size: 1vw;
+line-height: 1.6vw;
+color: #FFFFFF;
+margin-left: 2%;
+}
+#sedexo-icon{
+    width: 20%;
+    height: 25%;
+    margin-bottom: 2%;
+}
+.unit-2-text{
+    font-family: "Inter";
+font-weight: 400;
+font-size: 1vw;
+line-height: 1.6vw;
+color: #FFFFFF;
+}
+.footer-social-icon{
+    width: 1.2vw;
+    height: 1.2vw;
+}

@@ -1,0 +1,113 @@
+.contact-page-wrapper {
+  width: 100vw;
+  height: 63vw;
+  background-color: #f1f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#contact-heading {
+  width: 80%;
+  height: 5%;
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 3.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-text {
+  width: 80%;
+  height: 8%;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#contact-form-wrapper {
+  width: 80%;
+  height: 77%;
+}
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#line-1,
+#line-2,
+#line-3,
+#line-4 {
+  width: 80%;
+  height: 15%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+label {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 0.9vw;
+}
+#name-wrapper,
+#email-wrapper,
+#school-wrapper,
+#cell-wrapper {
+  width: 40%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+input {
+  width: 80%;
+  height: 20%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+#line-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+#send-msg {
+  width: 25%;
+  height: 33%;
+  margin-right: 8%;
+  background-color: #f54749;
+  color: #ffffff;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 1.3vw;
+  border-radius: 0.5vw;
+  border: none;
+}
+#line-4 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+::-moz-input-placeholder {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 1.3vw;
+  border-radius: 0.5vw;
+}

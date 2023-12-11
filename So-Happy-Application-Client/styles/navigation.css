@@ -1,0 +1,75 @@
+.navigation-wrapper {
+  width: 100vw;
+  height: 5.82vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo-wrapper {
+  width: 12.9vw;
+  height: 3.17vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#options-wrapper {
+  width:40vw;
+  height: 1.26vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#download-buton {
+  width: 11.38vw;
+  height: 3.17vw;
+  border: 1px solid #f54749;
+  color: #f54749;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.06vw;
+  line-height: 1.88vw;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.71vw;
+}
+#plate-spoons-wrapper {
+  width: 3.18vw;
+  height: 3.18vw;
+  border-radius: 0.71vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f54749;
+}
+#so-happy-text-wrapper {
+  width: 8.8vw;
+  height: 2.25vw;
+
+  color: #f54749;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.88vw;
+  line-height: 2.28vw;
+}
+#fork-image,
+#spoon-image {
+  width: 0.21vw;
+  height: 1.69vw;
+}
+#plate-image {
+  width: 1.82vw;
+  height: 1.82vw;
+}
+
+.nav-options-text {
+  color: #212e34;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.06vw;
+  line-height: 1.88vw;
+}

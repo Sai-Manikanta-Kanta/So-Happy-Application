@@ -1,0 +1,43 @@
+.admin-page-wrapper {
+  width: 100vw;
+  height: 40vw;
+  background-color: #ff566a26;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+table {
+  width: 80%;
+  height: 30%;
+  border: 1px solid black;
+
+  border-collapse: collapse;
+  background-color: aliceblue;
+}
+thead {
+  vertical-align: top;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 1vw;
+  background-color: palevioletred;
+}
+th {
+  border: 1px solid black;
+}
+tr {
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 0.75vw;
+}
+#admin-close-btn {
+  margin-bottom: 37%;
+  margin-left: 14%;
+}
